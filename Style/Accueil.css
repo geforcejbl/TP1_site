@@ -67,39 +67,70 @@ p {
     transform: scale(1.3);
 }
 
-/*Classement des motos : */
+/* Tableau */
 
 .Classement {
-    height: 400vh;
+    height: 200vh;
     background-color: lightgray;
-}
-
-.moto_classement{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-.ensemble_classement{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
 }
 
 .image-classement {
     max-width: 100%;
-    width: 25%;
+    width: 30vh;
     height: auto;
-    padding: 5vh 25vh;
     justify-content: space-between;
     display: flex;
     align-items: center;
 }
 
-#titre_Classement{
-    margin-left: 10%;
+.table-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-/*
-#texte_Classement {
 
-}*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li::before {
+    content: "• ";
+    color: #333;
+    font-weight: bold;
+}
+
+td ul li {
+    padding-left: 1em;
+}
+
+td ul li:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
